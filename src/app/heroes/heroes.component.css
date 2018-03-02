@@ -1,4 +1,8 @@
 /* HeroesComponent's private CSS styles */
+.container{
+  display: flex;    
+}
+
 .selected {
   background-color: #cfd8dc !important;
   color: white;
