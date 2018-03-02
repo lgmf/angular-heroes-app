@@ -12,7 +12,6 @@ import { Subscription } from 'rxjs/Subscription';
 })
 export class HeroesComponent implements OnInit, OnDestroy {
   heroes: Hero[];
-  selectedHero: Hero = null;
   subscribe: Subscription;
 
   constructor(public heroService: HeroService) { }
@@ -21,10 +20,6 @@ export class HeroesComponent implements OnInit, OnDestroy {
     this.subscribe = this.heroService
       .getHeroes()
       .subscribe(heroes => this.heroes = heroes);
-  }
-
-  handleSelect(hero: Hero): void {
-    this.selectedHero = hero;
   }
 
   ngOnDestroy() {

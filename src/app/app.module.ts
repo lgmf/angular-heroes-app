@@ -10,7 +10,6 @@ import { HeroService } from './hero.service';
 import { MessagesComponent } from './messages/messages.component';
 import { MessageService } from './message.service';
 import { AppRoutingModule } from './/app-routing.module';
-import { DashboarComponent } from './dashboar/dashboar.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
 
@@ -20,7 +19,6 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     HeroesComponent,
     HeroesDetailsComponent,
     MessagesComponent,
-    DashboarComponent,
     DashboardComponent
   ],
   imports: [

@@ -1,0 +1,12 @@
+.message-box{    
+    position: absolute;
+    bottom: 0 auto;
+    display: flex;
+    justify-content: center;    
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+    width: 20em;    
+    transition-timing-function: ease-in-out;
+}
+
