@@ -27,6 +27,10 @@ export class HeroesDetailsComponent implements OnInit {
     this.location.back();
   }
 
+  save(): void {
+    this.heroService.updateHero(this.hero);
+  }
+
   getHero(): void {
     // + --> convert to a number
     const id = +this.route.snapshot.paramMap.get('id');
